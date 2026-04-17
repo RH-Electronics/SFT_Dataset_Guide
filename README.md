@@ -29,7 +29,7 @@ The rule is simple - 500 human audited and verified pairs are better than 10000 
 **You train model -> you must provide the best and diverse, linguistically rich examples.**
 
 ## Should you keep personal data? 
-You decide. If you planning a public release of your model then remove personal names or any sensitive information. If you build your own AI companion, then make the opposite - include all you want the model should remember about you. 
+You decide. If you planning a public release of your model then remove personal names or any sensitive information. If you build your own AI companion, then make the opposite - include all you want the model to remember about you. It's not guaranted that it will remember all that included, but if same data repeated few times in the dataset then it probably will. 
 
 ## How many pairs to collect?
 Minimum 300 pairs, more than 1000 is recommended.
