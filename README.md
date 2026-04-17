@@ -31,6 +31,12 @@ The rule is simple - 500 human audited and verified pairs are better than 10000 
 ## Should you keep personal data? 
 You decide. If you planning a public release of your model then remove personal names or any sensitive information. If you build your own AI companion, then make the opposite - include all you want the model should remember about you. 
 
+## How many pairs to collect?
+Minimum 300 pairs, more than 1000 is recommended.
+
+## Should you mix data domains?
+Depend what is your SFT purpose. But even if you do pure RP dataset, try to enrich data domains. Don't stick only on RP, mix it with phylosophy, deep talks, emotional support, daily help, creativity, humor and etc. 
+
 # Build base.txt
 Read your 4o conversations and manually select pairs. 
 
