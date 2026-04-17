@@ -1,8 +1,8 @@
 # Plan your dataset
-Depending on VRAM aviliability for SFT and your original data, decide what is acceptable max_seq_length for one dataset pair.
+Depending on VRAM availability for SFT and your original data, decide what is acceptable max_seq_length for one dataset pair.
 One dataset pair can be a single turn type or a multiturn type, but the total tokens in one pair should never exceed your **max_seq_length**.
 
-If you limited in VRAM stick with max_seq_length = 2048 tokens.
+If you limited in VRAM, stick with max_seq_length = 2048 tokens.
 
 If you OK with short one-shot answers choose max_seq_length = 1024 tokens.
 
