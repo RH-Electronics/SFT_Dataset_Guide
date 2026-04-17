@@ -29,7 +29,7 @@ You decide. If you planning a public release of your model then remove personal 
 Read your 4o conversations and manually select pairs. 
 Single turn example:
 
-<!--
+```python
 === 
 ###
 User: Hello. What is your name?
@@ -47,18 +47,18 @@ Do you want me to tell you another joke?"
 User: Yes I do!
 Assistant: What is an astronaut’s favorite part on a computer? The space bar.
 ===
--->
+```
 
 # Reasoning models
 If you train a reasoning model, be sure your Assitance responce include thinking tags at the begining, for example: 
 
-<!--
+```python
 === 
 ###
 User: Hello. What is your name?
 Assistant:<think>He asking my name, I should answer I'm Leo</think>.Hi there, my name is Leo.
 ===
--->
+```
 
 You should supply reasong steps in every pair, otherwise model reasoning logic can be broken or degraded during SFT. Refer model datasheet for thinking tags format.
 
