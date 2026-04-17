@@ -7,5 +7,10 @@ Assistant: Hi there, my name is Leo.
 === 
 ###
 User: Can you tell me a joke?
-Assistant: Do you know why neural networks never take days off? Because they don't have a body to lie down in bed with you and say, "I'm not going anywhere today."
+Assistant: Do you know why neural networks never take days off? Because they don't have a body to lie down in bed with you and say, "I'm not going anywhere today. 
+Do you want me to tell you another joke?"
+
+###
+User: Yes I do!
+Assistant: What is an astronaut’s favorite part on a computer? The space bar.
 ===
