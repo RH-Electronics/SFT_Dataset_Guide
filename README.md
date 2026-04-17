@@ -76,8 +76,11 @@ This is the same prompt that will work later as an activation key pattern for yo
 
 Run python script main.py
 The output will have 2 files:
- dataset.jsonl dataset for STF
+
+ **dataset.jsonl dataset for STF**
+ 
  dataset.json human readable file, can be ignored
+ 
  
 # Verify dataset fit max_seq_length
 Open python script count_tokens.py
