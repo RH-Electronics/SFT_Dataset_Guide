@@ -104,6 +104,6 @@ Set your model HF path to allow tokenizer loading in
 Run python script and watch output statistics.
 Correct base.txt pairs if some pairs are exceeding your planned max_seq_length
  
-If any pair length is bigger that max_seq_length, then data will be truncated and model will not be able to learn properly how to finish this responce.
+If any pair length is bigger than max_seq_length, then data will be truncated and model will not be able to learn properly how to finish this responce.
  
  
