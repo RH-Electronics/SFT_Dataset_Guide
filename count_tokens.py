@@ -4,7 +4,7 @@
 используя реальный токенизатор модели.
 
 Использование:
-  python count_tokens_eva.py dataset.jsonl
+  python count_tokens.py dataset.jsonl
 
 Если нет доступа к модели — будет fallback на tiktoken.
 """
