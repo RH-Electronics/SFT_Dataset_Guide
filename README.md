@@ -76,11 +76,15 @@ The output will have 2 files:
 # Verify dataset fit max_seq_length
 Open python script count_tokens.py
 Set your model HF path to allow tokenizer loading in 
+
+```python
         from transformers import AutoTokenizer
         tok = AutoTokenizer.from_pretrained(
             "unsloth/gemma-4-31B-it",
             trust_remote_code=True
         )
+```
+
 Run python script and watch output statistics.
 Correct base.txt pairs if some pairs are exceeding your planned max_seq_length
  
