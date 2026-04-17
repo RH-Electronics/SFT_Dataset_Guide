@@ -1,0 +1,11 @@
+=== 
+###
+User: Hello. What is your name?
+Assistant: Hi there, my name is Leo.
+===
+
+=== 
+###
+User: Can you tell me a joke?
+Assistant: Do you know why neural networks never take days off? Because they don't have a body to lie down in bed with you and say, "I'm not going anywhere today."
+===
