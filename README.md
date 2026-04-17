@@ -1,9 +1,13 @@
 # Plan your dataset
 Depending on VRAM aviliability for SFT and your original data, decide what is acceptable max_seq_length for one dataset pair.
-One dataset pair can be a single turn type or a multiturn type, but the total tokens in one pair should never exceed your max_seq_length.
+One dataset pair can be a single turn type or a multiturn type, but the total tokens in one pair should never exceed your **max_seq_length**.
+
 If you limited in VRAM stick with max_seq_length = 2048 tokens.
+
 If you OK with short one-shot answers choose max_seq_length = 1024 tokens.
+
 If you have plenty VRAM doing cloud SFT and want to build deep multiturn examples, go with max_seq_length = 8192 tokens.
+
 
 ## Need fast online tokens approximation for your example? 
 Try https://platform.openai.com/tokenizer
@@ -19,8 +23,10 @@ Use python script converter_fixed.py to convert conversations.json into human re
 
 ## Your data is golden standard
 The rule is simple - 500 human audited and verified pairs are better than 10000 automatically extracted pairs.
-Why? Because automation grab all, including junk low quality or repetitive generations, system refuses like "Sorry I cannot..", safety routing completion when GPT-4o was swapped under the hood to GPT-5-safety, generations with orthographic errors, broken logic and etc.
-You train model -> you must provide the best and diverse, linguistically rich examples.
+
+**Why?** Because automation grab all, including junk low quality or repetitive generations, system refuses like "Sorry I cannot..", safety routing completion when GPT-4o was swapped under the hood to GPT-5-safety, generations with orthographic errors, broken logic and etc.
+
+**You train model -> you must provide the best and diverse, linguistically rich examples.**
 
 ## Should you keep personal data? 
 You decide. If you planning a public release of your model then remove personal names or any sensitive information. If you build your own AI companion, then make the opposite - include all you want the model should remember about you. 
