@@ -1,10 +1,10 @@
 """
-🔬 Eva Dataset Token Analyzer
-Считает токены в каждом диалоге eva_train.jsonl
+🔬 Dataset Token Analyzer
+Считает токены в каждом диалоге dataset.jsonl
 используя реальный токенизатор модели.
 
 Использование:
-  python count_tokens_eva.py eva_train.jsonl
+  python count_tokens_eva.py dataset.jsonl
 
 Если нет доступа к модели — будет fallback на tiktoken.
 """
@@ -13,7 +13,7 @@ import json
 import sys
 import statistics
 
-path = "eva_dataset.jsonl"
+path = "dataset.jsonl"
 
 
 def load_conversations(path):
@@ -35,7 +35,7 @@ def load_conversations(path):
 
 
 def try_qwen_tokenizer():
-    """Пытается загрузить токенизатор Qwen3."""
+    """Пытается загрузить токенизатор."""
     try:
         from transformers import AutoTokenizer
         tok = AutoTokenizer.from_pretrained(
@@ -193,5 +193,5 @@ def analyze(data_path):
 
 
 if __name__ == "__main__":
-    path = sys.argv[1] if len(sys.argv) > 1 else "eva_dataset.jsonl"
+    path = sys.argv[1] if len(sys.argv) > 1 else "dataset.jsonl"
     analyze(path)
