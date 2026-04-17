@@ -33,9 +33,10 @@ You decide. If you planning a public release of your model then remove personal 
 
 # Build base.txt
 Read your 4o conversations and manually select pairs. 
-Single turn example:
+
 
 ```python
+Single turn example:
 === 
 ###
 User: Hello. What is your name?
