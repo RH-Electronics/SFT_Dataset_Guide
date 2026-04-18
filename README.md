@@ -105,5 +105,8 @@ Run python script and watch output statistics.
 Correct base.txt pairs if some pairs are exceeding your planned max_seq_length
  
 If any pair length is bigger than max_seq_length, then data will be truncated and model will not be able to learn properly how to finish this responce.
- 
- 
+
+# Next Step
+Once dataset is ready, start fine tuning procedure with Unsloth Studio:
+https://github.com/RH-Electronics/SFT_Gemma-4-31b-it 
+
