@@ -10,7 +10,9 @@ If you have plenty VRAM doing cloud SFT and want to build deep multiturn example
 
 
 ## Need fast online tokens approximation for your example? 
-Try https://platform.openai.com/tokenizer
+Try: 
+https://platform.openai.com/tokenizer
+https://tiktokenizer.vercel.app/
 
 ## One pair logic
 During SFT model receive the pair {User, Assistance} and try to predict Assitance output according to User input.
