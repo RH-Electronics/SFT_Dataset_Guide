@@ -48,19 +48,18 @@ Read your 4o conversations and manually select pairs.
 ```python
 Single turn example:
 === 
-###
+===
 User: Hello. What is your name?
 Assistant: Hi there, my name is Leo.
 ===
 
 Multiturn example, put attaention to the '===' separator in my format:
 === 
-###
+===
 User: Can you tell me a joke?
 Assistant: Do you know why neural networks never take days off? Because they don't have a body to lie down in bed with you and say, "I'm not going anywhere today. 
 Do you want me to tell you another joke?"
 
-###
 User: Yes I do!
 Assistant: What is an astronaut’s favorite part on a computer? The space bar.
 ===
@@ -71,7 +70,7 @@ If you train a reasoning model, be sure your Assitance responce include thinking
 
 ```python
 === 
-###
+===
 User: Hello. What is your name?
 Assistant:<think>He asking my name, I should answer I'm Leo</think>.Hi there, my name is Leo.
 ===
